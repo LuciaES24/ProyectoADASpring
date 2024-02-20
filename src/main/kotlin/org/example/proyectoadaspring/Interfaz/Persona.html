@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Veterinario.css">
+    <title>Gestión Veterinario</title>
+</head>
+<body>
+    <header>
+        <img class= "imagenlogo" src="logoVet.png"/>
+        <h1 class="titulo">Persona</h1>
+    </header>
+    <main>
+        <a class="menu" href="Persona.html" target="_self">Persona</a>
+        <br><br><br>
+        <a class="menu" href="Mascota.html" target="_self">Mascota</a>
+        <br><br><br>
+        <a class="menu" href="Prueba.html" target="_self">Pruebas</a>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        <div class="bloquesizq" >
+            <div class="divCentral">
+                <h2>Agregar persona</h2>
+                <form action="http://localhost:8081/persona/add" method="post">
+                    <label class="text" for="dni">DNI:</label><br>
+                    <input class="inputField" type="text" id="dni" name="dni"><br><br>
+                    <label class="text" for="nombre">Nombre:</label><br>
+                    <input class="inputField" type="text" id="nombre" name="nombre"><br><br>
+                    <label class="text" for="telefono">Telefono:</label><br>
+                    <input class="inputField" type="text" id="telefono" name="telefono"><br><br>
+                    <label class="text" for="direccion">Dirección:</label><br>
+                    <input class="inputField" type="text" id="direccion" name="direccion"><br><br>
+                    <input class="boton" type="submit" value="Agregar">
+                </form>
+            </div>
+        </div>
+        <div class="bloquesder" >
+            <div class="divCentral">
+                <h2>Actualizar persona</h2>
+                <form action="http://localhost:8081/persona/update" method="get">
+                    <label class="text" for="dniActualizar">DNI de la persona a actualizar:</label><br>
+                    <input class="inputField" type="text" id="dniActualizar" name="dni"><br><br>
+                    <label class="text" for="nombreNuevo">Nombre:</label><br>
+                    <input class="inputField" type="text" id="nombreNuevo" name="nombre"><br><br>
+                    <label class="text" for="telefonoNuevo">Telefono:</label><br>
+                    <input class="inputField" type="text" id="telefonoNuevo" name="telefono"><br><br>
+                    <label class="text" for="direccionNueva">Dirección:</label><br>
+                    <input class="inputField" type="text" id="direccionNueva" name="direccion"><br><br>
+                    <input class="boton" type="submit" value="Actualizar">
+                </form>
+            </div>
+        </div>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        <div class="bloquesizq" >
+            <div class="divCentral">
+                <h2>Eliminar persona</h2>
+                <form action="http://localhost:8081/persona/del" method="get">
+                    <label class="text" for="dniEliminar">DNI:</label><br>
+                    <input class="inputField" type="text" id="dniEliminar" name="dni"><br><br>
+                    <input class="boton" type="submit" value="Eliminar">
+                </form>
+            </div>
+        </div>
+        <div class="bloquesder" >
+            <div class="divCentral">
+                <h2>Buscar persona por nombre</h2>
+                <form action="http://localhost:8081/persona/nombre" method="get">
+                    <label class="text" for="nombreBuscar">Nombre:</label><br>
+                    <input class="inputField" type="text" id="nombreBuscar" name="nombre"><br><br>
+                    <input class="boton" type="submit" value="Buscar">
+                </form>
+            </div>
+        </div>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        <div class="bloquesizq" >
+            <div class="divCentral">
+                <h2>Buscar persona por DNI</h2>
+                <form action="http://localhost:8081/persona/dni" method="get">
+                    <label class="text" for="dniBuscar">DNI:</label><br>
+                    <input class="inputField" type="text" id="dniBuscar" name="dni"><br><br>
+                    <input class="boton" type="submit" value="Buscar">
+                </form>
+            </div>
+        </div>
+        <div class="bloquesder" >
+            <div class="divCentral">
+            <h2>Buscar persona por dirección</h2>
+                <form action="http://localhost:8081/persona/direccion" method="get">
+                    <label class="text" for="direccionBuscar">Dirección:</label><br>
+                    <input class="inputField" type="text" id="direccionBuscar" name="direccion"><br><br>
+                    <input class="boton" type="submit" value="Buscar">
+                </form>
+            </div>
+        </div>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        <div class="bloquesizq">
+            <div class="divCentral">
+                <h2>Buscar persona por teléfono</h2>
+                <form action="http://localhost:8081/persona/telefono" method="get">
+                    <label class="text" for="telefonoBuscar">Telefono:</label><br>
+                    <input class="inputField" type="text" id="telefonoBuscar" name="telefono"><br><br>
+                    <input class="boton" type="submit" value="Buscar">
+                </form>
+            </div>
+        </div>
+        <div class="bloquesder" >
+            <div class="divCentral">
+                <h2>Buscar todas las personas</h2>
+                <form action="http://localhost:8081/persona/all" method="get">
+                    <input class="boton" type="submit" value="Buscar">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

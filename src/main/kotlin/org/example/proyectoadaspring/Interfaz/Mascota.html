@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Veterinario.css">
+    <title>Gestión Veterinario</title>
+</head>
+<body>
+<header>
+    <img class= "imagenlogo" src="logoVet.png"/>
+    <h1 class="titulo">Mascota</h1>
+</header>
+<main>
+    <a class="menu" href="Persona.html" target="_self">Persona</a>
+    <br><br><br>
+    <a class="menu" href="Mascota.html" target="_self">Mascota</a>
+    <br><br><br>
+    <a class="menu" href="Prueba.html" target="_self">Pruebas</a>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <div class="bloquesizq" >
+        <div class="divCentral">
+            <h2>Agregar mascota</h2>
+            <form action="http://localhost:8081/mascota/add" method="post">
+                <label class="text" for="nombre">Nombre:</label><br>
+                <input class="inputField" type="text" id="nombre" name="nombreMascota"><br><br>
+                <label class="text" for="tipo">Tipo:</label><br>
+                <input class="inputField" type="text" id="tipo" name="tipo"><br><br>
+                <label class="text" for="dniDueno">DNI dueño:</label><br>
+                <input class="inputField" type="text" id="dniDueno" name="dniDueno"><br><br>
+                <input class="boton" type="submit" value="Agregar">
+            </form>
+        </div>
+    </div>
+    <div class="bloquesder" >
+        <div class="divCentral">
+            <h2>Actualizar mascota</h2>
+            <form action="http://localhost:8081/mascota/update" method="get">
+                <label class="text" for="idMascota">ID de la mascota a actualizar:</label><br>
+                <input class="inputField" type="text" id="idMascota" name="idMascota"><br><br>
+                <label class="text" for="nombreNuevo">Nombre:</label><br>
+                <input class="inputField" type="text" id="nombreNuevo" name="nombreMascota"><br><br>
+                <label class="text" for="tipoNuevo">Tipo:</label><br>
+                <input class="inputField" type="text" id="tipoNuevo" name="tipo"><br><br>
+                <label class="text" for="duenoNuevo">DNI dueño:</label><br>
+                <input class="inputField" type="text" id="duenoNuevo" name="dniDueno"><br><br>
+                <input class="boton" type="submit" value="Actualizar">
+            </form>
+        </div>
+    </div>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <div class="bloquesizq" >
+        <div class="divCentral">
+            <h2>Eliminar mascota</h2>
+            <form action="http://localhost:8081/mascota/del" method="get">
+                <label class="text" for="IDMascotaEliminar">ID mascota:</label><br>
+                <input class="inputField" type="text" id="IDMascotaEliminar" name="idMascota"><br><br>
+                <input class="boton" type="submit" value="Eliminar">
+            </form>
+        </div>
+    </div>
+    <div class="bloquesder" >
+        <div class="divCentral">
+            <h2>Buscar mascota por nombre</h2>
+            <form action="http://localhost:8081/mascota/nombre" method="get">
+                <label class="text" for="nombreBuscar">Nombre:</label><br>
+                <input class="inputField" type="text" id="nombreBuscar" name="nombreMascota"><br><br>
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <div class="bloquesizq" >
+        <div class="divCentral">
+            <h2>Buscar mascota por ID</h2>
+            <form action="http://localhost:8081/mascota/id" method="get">
+                <label class="text" for="idBuscar">ID de la mascota:</label><br>
+                <input class="inputField" type="text" id="idBuscar" name="idMascota"><br><br>
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+    <div class="bloquesder" >
+        <div class="divCentral">
+            <h2>Buscar mascota por tipo</h2>
+            <form action="http://localhost:8081/mascota/tipo" method="get">
+                <label class="text" for="tipoBuscar">Tipo:</label><br>
+                <input class="inputField" type="text" id="tipoBuscar" name="tipo"><br><br>
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <div class="bloquesizq" >
+        <div class="divCentral">
+            <h2>Buscar mascota por DNI del dueño</h2>
+            <form action="http://localhost:8081/mascota/dueno" method="get">
+                <label class="text" for="dniDuenoBuscar">DNI del dueño:</label><br>
+                <input class="inputField" type="text" id="dniDuenoBuscar" name="dueno"><br><br>
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+    <div class="bloquesder" >
+        <div class="divCentral">
+            <h2>Buscar todas las mascotas</h2>
+            <form action="http://localhost:8081/mascota/all" method="get">
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+</html>

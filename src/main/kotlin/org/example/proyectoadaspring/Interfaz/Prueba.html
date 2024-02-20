@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Veterinario.css">
+    <title>Gestión Veterinario</title>
+</head>
+<body>
+<header>
+    <img class= "imagenlogo" src="logoVet.png"/>
+    <h1 class="titulo">Prueba</h1>
+</header>
+<main>
+    <a class="menu" href="Persona.html" target="_self">Persona</a>
+    <br><br><br>
+    <a class="menu" href="Mascota.html" target="_self">Mascota</a>
+    <br><br><br>
+    <a class="menu" href="Prueba.html" target="_self">Pruebas</a>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <div class="bloquesizq">
+        <div class="divCentral">
+            <h2>Agregar prueba</h2>
+            <form action="http://localhost:8081/prueba/add" method="post">
+                <label class="text" for="nombrePrueba">Nombre:</label><br>
+                <input class="inputField" type="text" id="nombrePrueba" name="nombrePrueba"><br><br>
+                <label class="text" for="fechaRealizada">Fecha en que se realizó:</label><br>
+                <input class="inputField" type="text" id="fechaRealizada" name="fechaRealizada"><br><br>
+                <label class="text" for="idMascota">ID mascota:</label><br>
+                <input class="inputField" type="text" id="idMascota" name="mascota"><br><br>
+                <input class="boton" type="submit" value="Agregar">
+            </form>
+        </div>
+    </div>
+    <div class="bloquesder" >
+        <div class="divCentral">
+            <h2>Actualizar prueba</h2>
+            <form action="http://localhost:8081/prueba/update" method="get">
+                <label class="text" for="idPrueba">ID de la prueba a actualizar:</label><br>
+                <input class="inputField" type="text" id="idPrueba" name="idPrueba"><br><br>
+                <label class="text" for="nombreNuevo">Nombre:</label><br>
+                <input class="inputField" type="text" id="nombreNuevo" name="nombrePrueba"><br><br>
+                <label class="text" for="fechaRealizadaNueva">Fecha en que se realizó:</label><br>
+                <input class="inputField" type="text" id="fechaRealizadaNueva" name="fechaRealizada"><br><br>
+                <label class="text" for="idMascotaNuevo">ID mascota:</label><br>
+                <input class="inputField" type="text" id="idMascotaNuevo" name="mascota"><br><br>
+                <input class="boton" type="submit" value="Actualizar">
+            </form>
+        </div>
+    </div>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <div class="bloquesizq" >
+        <div class="divCentral">
+            <h2>Eliminar prueba</h2>
+            <form action="http://localhost:8081/prueba/del" method="get">
+                <label class="text" for="IDPruebaEliminar">ID mascota:</label><br>
+                <input class="inputField" type="text" id="IDPruebaEliminar" name="idPrueba"><br><br>
+                <input class="boton" type="submit" value="Eliminar">
+            </form>
+        </div>
+    </div>
+    <div class="bloquesder" >
+        <div class="divCentral">
+            <h2>Buscar prueba por nombre</h2>
+            <form action="http://localhost:8081/prueba/nombre" method="get">
+                <label class="text" for="nombreBuscar">Nombre:</label><br>
+                <input class="inputField" type="text" id="nombreBuscar" name="nombrePrueba"><br><br>
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <div class="bloquesizq" >
+        <div class="divCentral">
+            <h2>Buscar prueba por ID</h2>
+            <form action="http://localhost:8081/prueba/id" method="get">
+                <label class="text" for="idPruebaBuscar">ID de la mascota:</label><br>
+                <input class="inputField" type="text" id="idPruebaBuscar" name="idPrueba"><br><br>
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+    <div class="bloquesder" >
+        <div class="divCentral">
+            <h2>Buscar prueba por fecha realizada</h2>
+            <form action="http://localhost:8081/prueba/fecha" method="get">
+                <label class="text" for="fechaBuscar">Fecha en que se realizó:</label><br>
+                <input class="inputField" type="text" id="fechaBuscar" name="fechaRealizada"><br><br>
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    <div class="bloquesizq" >
+        <div class="divCentral">
+            <h2>Buscar prueba por ID de la mascota</h2>
+            <form action="http://localhost:8081/prueba/id" method="get">
+                <label class="text" for="idMascotaBuscar">DNI del dueño:</label><br>
+                <input class="inputField" type="text" id="idMascotaBuscar" name="mascota"><br><br>
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+    <div class="bloquesder" >
+        <div class="divCentral">
+            <h2>Buscar todas las pruebas</h2>
+            <form action="http://localhost:8081/prueba/all" method="get">
+                <input class="boton" type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+</html>
