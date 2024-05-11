@@ -22,7 +22,7 @@ interface MascotaRepository : CrudRepository<Mascota?, Int?> {
      *
      * @return datos de las mascotas con ese nombre
      */
-    fun findBynombreMascota(name: String): List<Mascota?>
+    fun findByNombreMascota(nombreMascota: String): List<Mascota?>
 
     /**
      * Busca a una mascota a partir del dni de su dueño

@@ -74,7 +74,7 @@ class MascotaController {
      */
     @GetMapping(path = ["/nombre"])
     @ResponseBody
-    fun findByNombreMascota(
+    fun findByNombre(
         @RequestParam nombreMascota: String?): Iterable<Mascota?> {
         return mascotaService!!.getMascotaByNombre(nombreMascota)
     }

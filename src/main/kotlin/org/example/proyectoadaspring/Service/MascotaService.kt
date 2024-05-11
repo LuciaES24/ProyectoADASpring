@@ -136,7 +136,7 @@ class MascotaService {
         return if (nombreMascota == null) {
             mascotaRepository!!.findAll()
         } else {
-            mascotaRepository!!.findBynombreMascota(nombreMascota)
+            mascotaRepository!!.findByNombreMascota(nombreMascota)
         }
     }
 
